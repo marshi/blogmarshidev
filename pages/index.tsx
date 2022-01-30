@@ -2,7 +2,7 @@ import Head from 'next/head'
 import BlogLine, {BlogLineData} from "../components/bloglist/BlogLine";
 
 export default function Home() {
-  const blogLine: BlogLineData = {title: "title", date: "2020/10", content: "content"}
+  const blogLine: BlogLineData = {id: "", title: "title", date: "2020/10", content: "content", summary: ""}
   return (
     <div className="container">
       <Head>
