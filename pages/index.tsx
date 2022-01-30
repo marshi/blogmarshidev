@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import BlogLine, {BlogLineData} from "../components/bloglist/BlogLine";
-import BlogList from "./BlogList";
 
 export default function Home() {
   const blogLine: BlogLineData = {title: "title", date: "2020/10", content: "content"}

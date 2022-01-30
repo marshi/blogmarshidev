@@ -4,10 +4,6 @@ import {GetStaticProps, InferGetStaticPropsType} from "next";
 
 export type BlogListData = {
   data: BlogLineData[]
-
-  // constructor({data}: { data: BlogLineData[] }) {
-  //   this.data = data;
-  // }
 }
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
@@ -26,7 +22,6 @@ export default function BlogList({data}: Props) {
 
 export const getStaticProps: GetStaticProps<BlogListData> = () => {
   const blogLineData = getPosts()
-  console.log(blogLineData)
   const data = {data: blogLineData};
   return {
     props: data

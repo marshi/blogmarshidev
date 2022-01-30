@@ -12,7 +12,7 @@ export default function getPosts(): BlogLineData[] {
     const matterResult = matter(fileContent)
     return {
       title: matterResult.data.title,
-      date: matterResult.data.date,
+      date: matterResult.data.created_at,
       content: matterResult.content
     }
   })
