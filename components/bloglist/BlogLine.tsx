@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export type BlogLineData = {
   id: string
   title: string
@@ -10,7 +12,7 @@ export default function BlogLine({props}: { props: BlogLineData }) {
   return (
     <div id={props.id}>
       <h1>
-        {props.title}
+        <Link href={`posts/${props.id}`}><a>{props.title}</a></Link>
       </h1>
       <div>
         {props.date}
