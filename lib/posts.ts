@@ -22,3 +22,14 @@ export default function getPosts(): BlogLineData[] {
   })
   return blogLines
 }
+
+export function getPaths() {
+  return fs.readdirSync(postsDirectory).map(fileName => {
+    const id = fileName.replace(/\.md$/, "")
+    return {
+      params: {
+        id: id
+      }
+    }
+  })
+}

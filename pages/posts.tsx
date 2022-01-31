@@ -8,7 +8,7 @@ export type BlogListData = {
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
-export default function BlogList({data}: Props) {
+export default function Posts({data}: Props) {
   return (
     <div>
       {
