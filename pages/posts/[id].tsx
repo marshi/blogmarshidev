@@ -1,6 +1,7 @@
 import {GetStaticPaths, GetStaticProps, InferGetStaticPropsType} from "next";
 import {getDetail, getPaths} from "../../lib/posts";
 import {ParsedUrlQuery} from "querystring";
+import Layout from "../../components/bloglist/Layout";
 
 export type BlogDetail = {
   title: string
@@ -13,12 +14,14 @@ export type Path = ParsedUrlQuery & { id: string }
 
 export default function blogDetail({title, content}: Props) {
   return (
-    <div>
-      <h1>{title}</h1>
-      <main>
-        <div dangerouslySetInnerHTML={{__html: content}}/>
-      </main>
-    </div>
+    <>
+      <Layout>
+        <h1>{title}</h1>
+        <main>
+          <div dangerouslySetInnerHTML={{__html: content}}/>
+        </main>
+      </Layout>
+    </>
   )
 }
 
