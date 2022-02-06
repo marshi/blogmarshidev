@@ -10,7 +10,7 @@ export type BlogLineData = {
 
 export default function BlogLine({props}: { props: BlogLineData }) {
   return (
-    <div id={props.id}>
+    <article id={props.id}>
       <h1>
         <Link href={`posts/${props.id}`}><a>{props.title}</a></Link>
       </h1>
@@ -20,6 +20,6 @@ export default function BlogLine({props}: { props: BlogLineData }) {
       <div>
         {props.summary}
       </div>
-    </div>
+    </article>
   )
 }

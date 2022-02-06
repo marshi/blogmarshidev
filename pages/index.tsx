@@ -7,7 +7,7 @@ export default function Home() {
   const blogLine: BlogLineData = {id: "", title: "title", date: "2020/10", content: "content", summary: ""}
   return (
     <div className="container">
-      <Layout>
+      <Layout title="hogepiyo engineering">
         <main>
           <h1 className="title">
             Welcome to <a href="https://nextjs.org">Next.js!</a>

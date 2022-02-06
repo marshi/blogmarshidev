@@ -2,11 +2,11 @@ import {ReactNode} from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Layout({children}: { children: ReactNode }) {
+export default function Layout({title, children}: { title: String, children: ReactNode }) {
   return (
     <>
       <Head>
-        <title>hogepiyo engineering</title>
+        <title>{title}</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <header>

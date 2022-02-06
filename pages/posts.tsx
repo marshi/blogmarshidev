@@ -11,7 +11,7 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>
 
 export default function Posts({data}: Props) {
   return (
-    <Layout>
+    <Layout title="記事一覧">
       {
         data.map((d, i) => {
           return <BlogLine props={d} key={i}/>

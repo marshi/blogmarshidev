@@ -15,10 +15,13 @@ export type Path = ParsedUrlQuery & { id: string }
 export default function blogDetail({title, content}: Props) {
   return (
     <>
-      <Layout>
-        <h1>{title}</h1>
+      <Layout title={title}>
+        <header>
+          <h1>{title}</h1>
+        </header>
         <main>
-          <div dangerouslySetInnerHTML={{__html: content}}/>
+          <article dangerouslySetInnerHTML={{__html: content}}>
+          </article>
         </main>
       </Layout>
     </>
