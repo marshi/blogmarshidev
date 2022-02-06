@@ -1,7 +1,7 @@
 import {GetStaticPaths, GetStaticProps, InferGetStaticPropsType} from "next";
 import {getDetail, getPaths} from "../../lib/posts";
 import {ParsedUrlQuery} from "querystring";
-import Layout from "../../components/bloglist/Layout";
+import Layout from "../../components/Layout";
 
 export type BlogDetail = {
   title: string

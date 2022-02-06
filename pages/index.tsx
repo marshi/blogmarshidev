@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import BlogLine, {BlogLineData} from "../components/bloglist/BlogLine";
-import Layout from '../components/bloglist/Layout';
+import Layout from '../components/Layout';
 
 export default function Home() {
   const blogLine: BlogLineData = {id: "", title: "title", date: "2020/10", content: "content", summary: ""}
