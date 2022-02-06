@@ -9,18 +9,9 @@ export default function Home() {
     <div className="container">
       <Layout title="hogepiyo engineering">
         <main>
-          <h1 className="title">
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
-          </h1>
-
-          <p className="description">
-            Get started by editing <code>pages/index.js</code>
-          </p>
-
           <Link href="posts"><a>記事一覧</a></Link>
         </main>
       </Layout>
-
     </div>
   )
 }
