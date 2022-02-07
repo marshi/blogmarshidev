@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import {BlogLineData} from "../components/bloglist/BlogLine";
+import {BlogLineData} from "../components/blogline/BlogLine";
 import removeMd from 'remove-markdown';
 import {BlogDetail, Path} from "../pages/posts/[id]";
 import remarkHtml from "remark-html";

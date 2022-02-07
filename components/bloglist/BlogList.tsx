@@ -1,5 +1,5 @@
 import Link from "next/link"
-import BlogLine from "./BlogLine";
+import BlogLine from "../blogline/BlogLine";
 
 export type BlogLineData = {
   id: string

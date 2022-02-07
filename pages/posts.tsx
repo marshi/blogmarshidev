@@ -1,4 +1,4 @@
-import BlogLine, {BlogLineData} from "../components/bloglist/BlogLine";
+import BlogLine, {BlogLineData} from "../components/blogline/BlogLine";
 import getPosts from "../lib/posts";
 import {GetStaticProps, InferGetStaticPropsType} from "next";
 import Layout from "../components/Layout";

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import style from "../blogline/blog_line.module.css"
 
 export type BlogLineData = {
   id: string
@@ -10,14 +11,14 @@ export type BlogLineData = {
 
 export default function BlogLine({props}: { props: BlogLineData }) {
   return (
-    <article id={props.id}>
-      <h1>
+    <article id={props.id} className={style.root}>
+      <div className={style.date}>
+        <time>{props.date}</time>
+      </div>
+      <h1 className={style.title}>
         <Link href={`posts/${props.id}`}><a>{props.title}</a></Link>
       </h1>
-      <div>
-        {props.date}
-      </div>
-      <div>
+      <div className={style.summary}>
         {props.summary}
       </div>
     </article>

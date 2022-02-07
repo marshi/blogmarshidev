@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link';
-import BlogLine, {BlogLineData} from "../components/bloglist/BlogLine";
+import BlogLine, {BlogLineData} from "../components/blogline/BlogLine";
 import Layout from '../components/Layout';
 
 export default function Home() {
