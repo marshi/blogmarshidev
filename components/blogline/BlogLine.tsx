@@ -1,5 +1,6 @@
 import Link from "next/link"
 import style from "../blogline/blog_line.module.css"
+import {format} from "../../lib/dateformat";
 
 export type BlogLineData = {
   id: string
@@ -10,10 +11,11 @@ export type BlogLineData = {
 }
 
 export default function BlogLine({props}: { props: BlogLineData }) {
+  const formattedDate = format(new Date(props.date))
   return (
     <article id={props.id} className={style.root}>
       <div className={style.date}>
-        <time>{props.date}</time>
+        <time>{formattedDate}</time>
       </div>
       <h1 className={style.title}>
         <Link href={`posts/${props.id}`}><a>{props.title}</a></Link>
