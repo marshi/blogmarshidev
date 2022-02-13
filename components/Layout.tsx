@@ -1,6 +1,7 @@
 import {ReactNode} from "react";
 import Head from "next/head";
 import Link from "next/link";
+import style from "./layout.module.css"
 
 export default function Layout({title, children}: { title: String, children: ReactNode }) {
   return (
@@ -9,11 +10,11 @@ export default function Layout({title, children}: { title: String, children: Rea
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <header>
+      <header className={style.header}>
         <Link href="/"><a>top</a></Link>
       </header>
       {children}
-      <footer>
+      <footer className={style.footer}>
         footer
       </footer>
     </>

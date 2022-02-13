@@ -1,0 +1,13 @@
+.header {
+    position: sticky;
+    top: 0;
+    background: lightblue;
+    width: 100%;
+}
+
+.footer {
+    background: lightblue;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
